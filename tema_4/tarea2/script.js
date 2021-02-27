@@ -1,8 +1,10 @@
-function Producto_alimenticio(cod, nombre, precio) {
-  this.cod = cod;
-  this.nombre = nombre;
-  this.precio = precio;
-  this.imprimirDatos = function () {
+class Producto_alimenticio {
+  constructor (cod, nombre, precio){ 
+    this.cod = cod;
+    this.nombre = nombre;
+    this.precio = precio;
+  }
+  imprimirDatos () {
     var resultado = `
       Código: ${this.cod}<br/>
       Nombre: ${this.nombre}<br/>
